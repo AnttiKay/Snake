@@ -13,8 +13,8 @@ public class SnakeStage {
 
     public SnakeStage(double x, double y, double width, double height, int rows, int columns) {
         position = new Point2D(x, y);
-        //rectSideLength = Math.min(width / columns, height / rows);
-        rectSideLength = 10;
+        rectSideLength = Math.floor(Math.min(width / columns, height / rows)) ;
+
         double stageX = position.getX();
         double stageY = position.getY();
         System.out.println(rectSideLength);
@@ -32,6 +32,5 @@ public class SnakeStage {
         for (Rectangle rectangle : stage) {
             rectangle.draw(gc);
         }
-        gc.stroke();
     }
 }

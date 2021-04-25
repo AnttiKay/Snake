@@ -16,7 +16,7 @@ public class Rectangle {
 
     public void draw(GraphicsContext gc) {
 
-        gc.rect(x, y, x + sideLength, y + sideLength);
+        gc.strokeRect(x, y, sideLength, sideLength);
 
     }
 

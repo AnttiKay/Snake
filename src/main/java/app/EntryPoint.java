@@ -1,13 +1,6 @@
 package app;
-
-import java.awt.Color;
-
-import org.jheaps.Heap;
-
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Group;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
@@ -17,8 +10,8 @@ public class EntryPoint extends Application {
 
     private double HEIGHT = 600;
     private double WIDTH = 800;
-    private int rows = 4;
-    private int columns = 4;
+    private int rows = 10;
+    private int columns = 10;
 
     @Override
     public void start(Stage stage) throws Exception {
